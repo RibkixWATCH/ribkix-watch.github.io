@@ -65,7 +65,6 @@ function lighttheme() {
 }
 
 function toggletheme(){
-  console.log(localStorage.getItem("theme"))
   if (localStorage.getItem("theme") == "light"){
     localStorage.setItem("theme","dark");
     darktheme();
@@ -73,6 +72,8 @@ function toggletheme(){
   if (localStorage.getItem("theme") == "dark"){
     localStorage.setItem("theme","light");
     lighttheme();
+  } else {
+    localStorage.setItem("theme","dark");
   }
 }
 
