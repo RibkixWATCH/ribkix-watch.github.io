@@ -75,6 +75,7 @@ function toggletheme(){
     lighttheme();
   } else {
     localStorage.setItem("theme","dark");
+    darktheme();
   }
 }
 
