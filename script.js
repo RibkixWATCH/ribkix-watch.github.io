@@ -66,10 +66,12 @@ function lighttheme() {
 
 function toggletheme(){
   if (localStorage.getItem("theme") == "light"){
+    print("l");
     localStorage.setItem("theme","dark");
     darktheme();
   }
   if (localStorage.getItem("theme") == "dark"){
+    print("d");
     localStorage.setItem("theme","light");
     lighttheme();
   }
