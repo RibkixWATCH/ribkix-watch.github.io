@@ -64,6 +64,39 @@ function lighttheme() {
   });
 }
 
+function gaytheme() {
+  document.querySelector(".navbar").classList.remove("navbar-dark");
+  document.querySelector(".navbar").classList.add("navbar-light");
+  document.querySelector(".navbar-logo").src = "https://cdn.discordapp.com/avatars/492615119201632257/543e1182c9c561719492c37228478436.png";
+  document.body.style.backgroundColor = "#e041cd";
+  scrollmenu = document.querySelectorAll(".scrollmenu");
+  scrollmenu.forEach(function(scrollmenu) {
+     scrollmenu.style.backgroundColor = "#d10fba";
+  });
+  item = document.querySelectorAll(".item");
+  item.forEach(function(item) {
+     item.style.backgroundColor = "#ab1d9a";
+  });
+  item_name = document.querySelectorAll(".item-name");
+  item_name.forEach(function(item_name) {
+     item_name.style.color = "#fff";
+  });
+  text = document.querySelectorAll(".text");
+  text.forEach(function(text) {
+     text.style.color = "#fff";
+  });
+  btn = document.querySelectorAll(".btn-solid-dark");
+  btn.forEach(function(btn) {
+    btn.classList.remove("btn-solid-dark");
+    btn.classList.add("btn-solid-light");
+  });
+  dbtn = document.querySelectorAll(".disabled-dark");
+  dbtn.forEach(function(dbtn) {
+    dbtn.classList.remove("disabled-dark");
+    dbtn.classList.add("disabled");
+  });
+}
+
 function toggletheme(){
   console.log(localStorage.getItem("theme"));
   if (localStorage.getItem("theme") == "light"){
@@ -86,6 +119,9 @@ window.onload = function(){
     } 
     if (localStorage.getItem("theme") == "dark") {
       darktheme();
+    }
+    if (localStorage.getItem("theme") == "gay") {
+      gaytheme();
     }
   }
 }
