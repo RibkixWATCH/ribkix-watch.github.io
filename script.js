@@ -70,7 +70,7 @@ function toggletheme(){
     location.reload();
   }
   if (localStorage.getItem("theme") == "dark"){
-    localStorage.setItem("theme","dark");
+    localStorage.setItem("theme","light");
     location.reload();
   }
 }
