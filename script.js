@@ -56,4 +56,8 @@ function lighttheme() {
     btn.classList.remove("btn-solid-light");
     btn.classList.add("btn-solid-dark");
   });
+  dbtn = document.querySelectorAll(".disabled");
+  dbtn.forEach(function(dbtn) {
+    dbtn.style.backgroundColor = "#dbdbdb";
+  });
 }
