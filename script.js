@@ -23,7 +23,7 @@ function darktheme() {
   btn.forEach(function(btn) {
     btn.classList.remove("btn-solid-light");
     btn.classList.remove("btn-solid-dark");
-  }
+  )};
 }
 
 function lighttheme() {
@@ -51,5 +51,5 @@ function lighttheme() {
   btn.forEach(function(btn) {
     btn.classList.remove("btn-solid-light");
     btn.classList.remove("btn-solid-dark");
-  }
+  )};
 }
