@@ -35,7 +35,7 @@ function lighttheme() {
      item.style.backgroundColor = "#dbdbdb";
   });
   item_name = document.querySelectorAll(".item-name");
-  item_name.forEach(function(text) {
+  item_name.forEach(function(item_name) {
      item_name.style.color = "#000";
   });
   text = document.querySelectorAll(".text");
