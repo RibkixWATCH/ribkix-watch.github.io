@@ -12,7 +12,7 @@ function darktheme() {
      item.style.backgroundColor = "#505050";
   });
   item_name = document.querySelectorAll(".item-name");
-  item_name.forEach(function(text) {
+  item_name.forEach(function(item_name) {
      item_name.style.color = "#fff";
   });
   text = document.querySelectorAll(".text");
