@@ -2,5 +2,18 @@ div.scrollmenu {
   background-color: #ededed;
   overflow: auto;
   white-space: nowrap;
+  width: 80%;
+  height: 200px;
+}
+.item {
+  width: 175px;
+  height: 175px;
+  background-color: #dbdbdb;
+}
+.item img {
+  width: 150px;
   height: 150px;
+}
+.item p {
+  color: #000;
 }
