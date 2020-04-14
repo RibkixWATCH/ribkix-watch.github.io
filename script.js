@@ -66,12 +66,10 @@ function lighttheme() {
 
 function toggletheme(){
   if (localStorage.getItem("theme") == "light"){
-    console.log("l");
     localStorage.setItem("theme","dark");
     darktheme();
   }
   if (localStorage.getItem("theme") == "dark"){
-    console.log("d");
     localStorage.setItem("theme","light");
     lighttheme();
   }
@@ -85,7 +83,5 @@ window.onload = function(){
     if (localStorage.getItem("theme") == "dark") {
       darktheme();
     }
-  } else {
-    localStorage.setItem("theme","light");
   }
 }
