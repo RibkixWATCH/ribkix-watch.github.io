@@ -67,11 +67,11 @@ function lighttheme() {
 function toggletheme(){
   if (localStorage.getItem("theme") == "light"){
     localStorage.setItem("theme","dark");
-    location.reload();
+    darktheme();
   }
   if (localStorage.getItem("theme") == "dark"){
     localStorage.setItem("theme","light");
-    location.reload();
+    lighttheme();
   }
 }
 
