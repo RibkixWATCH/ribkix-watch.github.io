@@ -26,7 +26,8 @@ function darktheme() {
   });
   dbtn = document.querySelectorAll(".disabled");
   dbtn.forEach(function(dbtn) {
-    dbtn.style.backgroundColor = "#505050";
+    dbtn.classList.remove("disabled");
+    dbtn.classList.add("disabled-dark");
   });
 }
 
@@ -56,8 +57,9 @@ function lighttheme() {
     btn.classList.remove("btn-solid-light");
     btn.classList.add("btn-solid-dark");
   });
-  dbtn = document.querySelectorAll(".disabled");
+  dbtn = document.querySelectorAll(".disabled-dark");
   dbtn.forEach(function(dbtn) {
-    dbtn.style.backgroundColor = "#dbdbdb";
+    dbtn.classList.remove("disabled-dark");
+    dbtn.classList.add("disabled");
   });
 }
