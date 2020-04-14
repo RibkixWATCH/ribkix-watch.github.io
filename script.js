@@ -3,6 +3,10 @@ function darktheme() {
   document.querySelector(".navbar").classList.add("navbar-dark");
   document.querySelector(".navbar-logo").src = "https://media.discordapp.net/attachments/651020737540259844/699701388849971282/Ribkix_WATCH_Logo_white.png";
   document.body.style.backgroundColor = "#101010";
+  document.querySelector(".scrollmenu").style.backgroundColor = "#303030";
+  document.querySelector(".item").style.backgroundColor = "#505050";
+  document.querySelector(".item-name").style.color = "#fff";
+  document.querySelector(".text").style.color = "#fff";
 }
 
 function lighttheme() {
@@ -10,4 +14,8 @@ function lighttheme() {
   document.querySelector(".navbar").classList.add("navbar-light");
   document.querySelector(".navbar-logo").src = "https://media.discordapp.net/attachments/651020737540259844/699622764721733754/Ribkix_WATCH_Logo.png";
   document.body.style.backgroundColor = "#fff";
+  document.querySelector(".scrollmenu").style.backgroundColor = "#efefef";
+  document.querySelector(".item").style.backgroundColor = "#dbdbdb";
+  document.querySelector(".item-name").style.color = "#000";
+  document.querySelector(".text").style.color = "#000";
 }
