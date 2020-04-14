@@ -19,6 +19,11 @@ function darktheme() {
   text.forEach(function(text) {
      text.style.color = "#fff";
   });
+  btn = document.querySelectorAll(".btn-solid-light");
+  btn.forEach(function(btn) {
+    btn.classList.remove("btn-solid-light");
+    btn.classList.remove("btn-solid-dark");
+  }
 }
 
 function lighttheme() {
@@ -42,4 +47,9 @@ function lighttheme() {
   text.forEach(function(text) {
      text.style.color = "#000";
   });
+  btn = document.querySelectorAll(".btn-solid-light");
+  btn.forEach(function(btn) {
+    btn.classList.remove("btn-solid-light");
+    btn.classList.remove("btn-solid-dark");
+  }
 }
