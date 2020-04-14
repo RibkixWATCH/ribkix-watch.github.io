@@ -52,10 +52,10 @@ function lighttheme() {
   text.forEach(function(text) {
      text.style.color = "#000";
   });
-  btn = document.querySelectorAll(".btn-solid-light");
+  btn = document.querySelectorAll(".btn-solid-dark");
   btn.forEach(function(btn) {
-    btn.classList.remove("btn-solid-light");
-    btn.classList.add("btn-solid-dark");
+    btn.classList.remove("btn-solid-dark");
+    btn.classList.add("btn-solid-light");
   });
   dbtn = document.querySelectorAll(".disabled-dark");
   dbtn.forEach(function(dbtn) {
