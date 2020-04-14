@@ -64,6 +64,17 @@ function lighttheme() {
   });
 }
 
+function toggletheme(){
+  if (localStorage.getItem("theme") == "light"){
+    localStorage.setItem("theme","dark");
+    location.reload();
+  }
+  if (localStorage.getItem("theme") == "dark"){
+    localStorage.setItem("theme","dark");
+    location.reload();
+  }
+}
+
 window.onload = function(){
   if (localStorage.getItem("theme")) {
     if (localStorage.getItem("theme") == "light"){
