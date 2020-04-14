@@ -71,7 +71,7 @@ function toggletheme(){
     darktheme();
   }
   if (localStorage.getItem("theme") == "dark"){
-    localStorage.setItem("theme","light");
+    localStorage.clear();
     lighttheme();
   } else {
     localStorage.setItem("theme","dark");
