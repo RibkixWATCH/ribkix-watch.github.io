@@ -1,1 +1,6 @@
-
+div.scrollmenu {
+  background-color: #ededed;
+  overflow: auto;
+  white-space: nowrap;
+  height: 150px;
+}
