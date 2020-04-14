@@ -63,3 +63,16 @@ function lighttheme() {
     dbtn.classList.add("disabled");
   });
 }
+
+window.onload = function(){
+  if (localStorage.getItem("theme")) {
+    if (localStorage.getItem("theme") == "light"){
+      lighttheme();
+    } 
+    if (localStorage.getItem("theme") == "dark") {
+      darktheme();
+    }
+  } else {
+    localStorage.setItem("theme","light");
+  }
+}
