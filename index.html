@@ -23,11 +23,7 @@
 <script>
   window.onload = function(){
     document.querySelector(".intro").controls = false;
-    if (localStorage.getItem("theme")){
-      if (localStorage.getItem("theme","false")){
-        window.location.replace("https://ribkix-watch-online.github.io/web");
-      }
-    } else {
+    if (localStorage.getItem("theme") == "false"){
       window.location.replace("https://ribkix-watch-online.github.io/web");
     }
   }
