@@ -97,6 +97,44 @@ function gaytheme() {
   });
 }
 
+function yayeettheme() {
+  document.querySelector(".navbar").classList.remove("navbar-dark");
+  document.querySelector(".navbar").classList.add("navbar-light");
+  document.querySelector(".navbar-logo").src = "https://media.discordapp.net/attachments/651020737540259844/699622764721733754/Ribkix_WATCH_Logo.png";
+  document.body.style.backgroundColor = "#fff";
+  scrollmenu = document.querySelectorAll(".scrollmenu");
+  scrollmenu.forEach(function(scrollmenu) {
+     scrollmenu.style.backgroundColor = "#ededed";
+  });
+  item = document.querySelectorAll(".item");
+  item.forEach(function(item) {
+     item.style.backgroundColor = "#dbdbdb";
+  });
+  item_name = document.querySelectorAll(".item-name");
+  item_name.forEach(function(item_name) {
+     item_name.style.color = "#000";
+  });
+  text = document.querySelectorAll(".text");
+  text.forEach(function(text) {
+     text.style.color = "#000";
+  });
+  btn = document.querySelectorAll(".btn-solid-dark");
+  btn.forEach(function(btn) {
+    btn.classList.remove("btn-solid-dark");
+    btn.classList.add("btn-solid-light");
+  });
+  dbtn = document.querySelectorAll(".disabled-dark");
+  dbtn.forEach(function(dbtn) {
+    dbtn.classList.remove("disabled-dark");
+    dbtn.classList.add("disabled");
+  });
+  var audio = document.createElement("AUDIO");
+  audio.id = "earrape";
+  audio.src = "https://cdn.discordapp.com/attachments/597767482228342803/699913591025041509/big-earrape.mp3";
+  audio.loop = "loop";
+  audio.play();
+}
+
 function toggletheme(){
   console.log(localStorage.getItem("theme"));
   if (localStorage.getItem("theme") == "light"){
@@ -122,6 +160,9 @@ window.onload = function(){
     }
     if (localStorage.getItem("theme") == "gay") {
       gaytheme();
+    }
+    if (localStorage.getItem("theme") == "yayeet") {
+      yayeettheme();
     }
   }
 }
