@@ -142,21 +142,26 @@ function toggletheme(){
   if (localStorage.getItem("theme") == "light"){
     localStorage.setItem("theme","dark");
     darktheme();
+    document.getElementById("theme").innerHTML = "Dark";
   }
   if (localStorage.getItem("theme") == "dark"){
     localStorage.clear();
     lighttheme();
+    document.getElementById("theme").innerHTML = "Light";
   } else {
     localStorage.setItem("theme","dark");
     darktheme();
+    document.getElementById("theme").innerHTML = "Dark";
   }
 }
 
 function toggleintro(){
   if (localStorage.getItem("intro") == "false"){
     localStorage.setItem("intro","true");
+    document.getElementById("intro").innerHTML = "Enabled";
   } else {
     localStorage.setItem("intro","false");
+    document.getElementById("intro").innerHTML = "Disabled";
   }
 }
 
