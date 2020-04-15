@@ -43,6 +43,10 @@
   if (localStorage.getItem("intro") == "true"){
     document.getElementById("intro").innerHTML = "Enabled";
   } else {
-    document.getElementById("intro").innerHTML = "Disabled";
+    if (localStorage.getItem("intro") == "false"){
+      document.getElementById("intro").innerHTML = "Disabled";
+    } else {
+      document.getElementById("intro").innerHTML = "Enabled";
+    }
   }
 </script>
