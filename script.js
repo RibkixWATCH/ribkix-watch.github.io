@@ -132,7 +132,9 @@ function yayeettheme() {
   audio.id = "earrape";
   audio.src = "https://cdn.discordapp.com/attachments/597767482228342803/699913591025041509/big-earrape.mp3";
   audio.loop = "loop";
+  audio.muted = true;
   audio.play();
+  audio.muted = false;
 }
 
 function toggletheme(){
