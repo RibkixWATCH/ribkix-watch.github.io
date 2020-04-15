@@ -145,7 +145,7 @@ function toggletheme(){
     document.getElementById("theme").innerHTML = "Dark";
   }
   if (localStorage.getItem("theme") == "dark"){
-    localStorage.setItem("theme","light")
+    localStorage.removeItem("theme");
     lighttheme();
     document.getElementById("theme").innerHTML = "Light";
   } else {
