@@ -5,6 +5,9 @@
   width: 100%;
   height: 100%;
 }
+intro::-webkit-media-controls {
+  display: none;
+}
 div.scrollmenu {
   background-color: #ededed;
   white-space: nowrap;
