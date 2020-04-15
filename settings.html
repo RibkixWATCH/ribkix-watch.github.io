@@ -22,7 +22,7 @@
     <p class="text">Currently: <span id="theme">Light</span></p>
     <button class="btn btn-solid-light" onclick="toggletheme();">Toggle theme</button>
     <h3 class="text">Intro</h3>
-    <p class="text">Currently: <span id="theme">Enabled</span></p>
+    <p class="text">Currently: <span id="intro">Enabled</span></p>
     <button class="btn btn-solid-light" onclick="toggleintro();">Toggle if intro shows or not</button>
   </body>
 </html>
@@ -39,5 +39,10 @@
         document.getElementById("theme").innerHTML = "Light";
       }
     }
-  } 
+  }
+  if (localStorage.getItem("intro") == "true"){
+    document.getElementById("intro").innerHTML = "Enabled";
+  } else {
+    document.getElementById("intro").innerHTML = "Disabled";
+  }
 </script>
