@@ -152,6 +152,14 @@ function toggletheme(){
   }
 }
 
+function toggleintro(){
+  if (localStorage.getItem("intro") == "false"){
+    localStorage.setItem("intro","true");
+  } else {
+    localStorage.setItem("intro","false");
+  }
+}
+
 window.onload = function(){
   if (localStorage.getItem("theme")) {
     if (localStorage.getItem("theme") == "light"){
