@@ -1,0 +1,59 @@
+div.scrollmenu {
+  background-color: #ededed;
+  white-space: nowrap;
+  width: 99%;
+  height: 230px;
+  margin-left: 5px;
+}
+.item {
+  width: 175px;
+  height: 200px;
+  background-color: #dbdbdb;
+  margin-left: 15px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.item img {
+  width: 150px;
+  height: 150px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.item p {
+  color: #000;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.item:hover {
+  transform: scale(1.1);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+body {
+  background-image: url("https://media.discordapp.net/attachments/651020737540259844/699637315361832980/eaTwAAAABJRU5ErkJggg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  color: #fff;
+  text-shadow: 2px 2px 14px #000;
+  font-size: 4em;
+}
+.disabled {
+  background-color: #dbdbdb !important;
+}
+.disabled-dark {
+  background-color: #505050 !important;
+}
+.disabled:hover, .disabled-dark:hover {
+  cursor: not-allowed;
+}
+.author .light {
+  color: #dbdbdb;
+  text-shadow: 2px 2px 14px #000;
+}
+.author .normal {
+  color: #fff;
+  text-shadow: 2px 2px 14px #000;
+}
