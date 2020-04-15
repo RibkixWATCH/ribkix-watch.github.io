@@ -19,8 +19,25 @@
     <br>
     <h1 class="text">Settings</h1>
     <h3 class="text">Theme</h3> 
+    <p class="text">Currently: <span id="theme">Light</span></p>
     <button class="btn btn-solid-light" onclick="toggletheme();">Toggle theme</button>
     <h3 class="text">Intro</h3>
+    <p class="text">Currently: <span id="theme">Enabled</span></p>
     <button class="btn btn-solid-light" onclick="toggleintro();">Toggle if intro shows or not</button>
   </body>
 </html>
+<script>
+  if (localStorage.getItem("theme") == "dark"){
+    document.getElementById("theme").innerHTML = "Dark";
+  } else {
+    if (localStorage.getItem("theme") == "gay"){
+      document.getElementById("theme").innerHTML = "Gay";
+    } else {
+      if (localStorage.getItem("theme") == "yayeet"){
+        document.getElementById("theme").innerHTML = "Yayeet";
+      } else {
+        document.getElementById("theme").innerHTML = "Light";
+      }
+    }
+  } 
+</script>
