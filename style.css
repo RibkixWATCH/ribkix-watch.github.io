@@ -29,12 +29,6 @@ div.scrollmenu {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-body {
-  background-image: url("https://media.discordapp.net/attachments/651020737540259844/699637315361832980/eaTwAAAABJRU5ErkJggg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .title {
   color: #fff;
   text-shadow: 2px 2px 14px #000;
