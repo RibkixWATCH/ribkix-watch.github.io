@@ -61,3 +61,557 @@ div.scrollmenu {
 .desc {
   margin-top: 0px;
 }
+
+/* ----------------------------------------- */
+
+/*
+
+                                                                                      
+                                                                                      
+   SSSSSSSSSSSSSSS      tttt                              lllllll                     
+ SS:::::::::::::::S  ttt:::t                              l:::::l                     
+S:::::SSSSSS::::::S  t:::::t                              l:::::l                     
+S:::::S     SSSSSSS  t:::::t                              l:::::l                     
+S:::::S        ttttttt:::::tttttttyyyyyyy           yyyyyyyl::::l     eeeeeeeeeeee    
+S:::::S        t:::::::::::::::::t y:::::y         y:::::y l::::l   ee::::::::::::ee  
+ S::::SSSS     t:::::::::::::::::t  y:::::y       y:::::y  l::::l  e::::::eeeee:::::ee
+  SS::::::SSSSStttttt:::::::tttttt   y:::::y     y:::::y   l::::l e::::::e     e:::::e
+    SSS::::::::SS    t:::::t          y:::::y   y:::::y    l::::l e:::::::eeeee::::::e
+       SSSSSS::::S   t:::::t           y:::::y y:::::y     l::::l e:::::::::::::::::e 
+            S:::::S  t:::::t            y:::::y:::::y      l::::l e::::::eeeeeeeeeee  
+            S:::::S  t:::::t    tttttt   y:::::::::y       l::::l e:::::::e           
+SSSSSSS     S:::::S  t::::::tttt:::::t    y:::::::y       l::::::le::::::::e          
+S::::::SSSSSS:::::S  tt::::::::::::::t     y:::::y        l::::::l e::::::::eeeeeeee  
+S:::::::::::::::SS     tt:::::::::::tt    y:::::y         l::::::l  ee:::::::::::::e  
+ SSSSSSSSSSSSSSS         ttttttttttt     y:::::y          llllllll    eeeeeeeeeeeeee  
+                                        y:::::y                                       
+                                       y:::::y                                        
+                                      y:::::y                                         
+                                     y:::::y                                          
+                                    yyyyyyy                                           
+                                                                                      
+                                                                                      
+                                                                                      
+                                                                                      
+HHHHHHHHH     HHHHHHHHH                   lllllll                                     
+H:::::::H     H:::::::H                   l:::::l                                     
+H:::::::H     H:::::::H                   l:::::l                                     
+HH::::::H     H::::::HH                   l:::::l                                     
+  H:::::H     H:::::H      eeeeeeeeeeee    l::::lppppp   ppppppppp                    
+  H:::::H     H:::::H    ee::::::::::::ee  l::::lp::::ppp:::::::::p                   
+  H::::::HHHHH::::::H   e::::::eeeee:::::eel::::lp:::::::::::::::::p                  
+  H:::::::::::::::::H  e::::::e     e:::::el::::lpp::::::ppppp::::::p                 
+  H:::::::::::::::::H  e:::::::eeeee::::::el::::l p:::::p     p:::::p                 
+  H::::::HHHHH::::::H  e:::::::::::::::::e l::::l p:::::p     p:::::p                 
+  H:::::H     H:::::H  e::::::eeeeeeeeeee  l::::l p:::::p     p:::::p                 
+  H:::::H     H:::::H  e:::::::e           l::::l p:::::p    p::::::p                 
+HH::::::H     H::::::HHe::::::::e         l::::::lp:::::ppppp:::::::p                 
+H:::::::H     H:::::::H e::::::::eeeeeeee l::::::lp::::::::::::::::p                  
+H:::::::H     H:::::::H  ee:::::::::::::e l::::::lp::::::::::::::pp                   
+HHHHHHHHH     HHHHHHHHH    eeeeeeeeeeeeee llllllllp::::::pppppppp                     
+                                                  p:::::p                             
+                                                  p:::::p                             
+                                                 p:::::::p                            
+                                                 p:::::::p                            
+                                                 p:::::::p                            
+                                                 ppppppppp                            
+                                                                                      
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+  _____                            _       
+ |_   _|                          | |      
+   | |  _ __ ___  _ __   ___  _ __| |_ ___ 
+   | | | '_ ` _ \| '_ \ / _ \| '__| __/ __|
+  _| |_| | | | | | |_) | (_) | |  | |_\__ \
+ |_____|_| |_| |_| .__/ \___/|_|   \__|___/
+                 | |                       
+                 |_|                       
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/*
+  __  __       _       
+ |  \/  |     (_)      
+ | \  / | __ _ _ _ __  
+ | |\/| |/ _` | | '_ \ 
+ | |  | | (_| | | | | |
+ |_|  |_|\__,_|_|_| |_|
+
+*/
+
+/* Stuff that applies to everything */
+* {
+  font-family: 'Muli', sans-serif;
+  transition: 0.3s ease;
+}
+
+/*
+  _   _             _                
+ | \ | |           | |               
+ |  \| | __ ___   _| |__   __ _ _ __ 
+ | . ` |/ _` \ \ / / '_ \ / _` | '__|
+ | |\  | (_| |\ V /| |_) | (_| | |   
+ |_| \_|\__,_| \_/ |_.__/ \__,_|_|  
+
+*/
+
+/* Navbar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Light navbar background */
+.navbar-light {
+  background-color: #ededed;
+  color: #000;
+}
+
+/* Dark navbar background */
+.navbar-dark {
+  background-color: #303030;
+  color: #fff;
+}
+
+/* Navbar list */
+.navbar li {
+  float: left;
+}
+
+/* Light navbar link of list */
+.navbar-light li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Dark navbar link of list */
+.navbar-dark li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Light navbar hover of link of list */
+.navbar-light li a:hover:not(.navbar-active) {
+  background-color: #dbdbdb;
+}
+
+/* Light navbar active */
+.navbar-light .navbar-active {
+  background-color: #dbdbdb;
+}
+
+/* Dark navbar hover of link of list */
+.navbar-dark li a:hover:not(.navbar-active) {
+  background-color: #101010;
+}
+
+/* Dark navbar active */
+.navbar-dark .navbar-active {
+  background-color: #101010;
+}
+
+/* Navbar logo */
+.navbar-logo {
+  float: left;
+  margin-right: 10px;
+}
+
+/* Navbar logo with link */
+a .navbar-logo {
+  cursor: pointer;
+}
+
+/* Navbar logo with link hover */
+a .navbar-logo:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+/*
+  _______        _              _ _             
+ |__   __|      | |       /\   | (_)            
+    | | _____  _| |_     /  \  | |_  __ _ _ __  
+    | |/ _ \ \/ / __|   / /\ \ | | |/ _` | '_ \ 
+    | |  __/>  <| |_   / ____ \| | | (_| | | | |
+    |_|\___/_/\_\\__| /_/    \_\_|_|\__, |_| |_|
+                                     __/ |      
+                                    |___/       
+*/
+
+
+/* Left */
+.align-left {
+  text-align: left;
+}
+
+/* Center */
+.align-center {
+  text-align: center;
+}
+
+/* Right */
+.align-right {
+  text-align: right;
+}
+
+/* Justify */
+.align-justify {
+  text-align: justify;
+}
+
+/* Inherit */
+.align-inherit {
+  text-align: inherit;
+}
+
+/* Initial */
+.align-initial {
+  text-align: initial;
+}
+
+/*
+  ______          _    __          __  _       _     _   
+ |  ____|        | |   \ \        / / (_)     | |   | |  
+ | |__ ___  _ __ | |_   \ \  /\  / /__ _  __ _| |__ | |_ 
+ |  __/ _ \| '_ \| __|   \ \/  \/ / _ \ |/ _` | '_ \| __|
+ | | | (_) | | | | |_     \  /\  /  __/ | (_| | | | | |_ 
+ |_|  \___/|_| |_|\__|     \/  \/ \___|_|\__, |_| |_|\__|
+                                          __/ |          
+                                         |___/           
+*/
+
+/* Normal */
+.weight-normal {
+ font-weight: normal; 
+}
+
+/* Bold */
+.weight-bold {
+  font-weight: bold;
+}
+
+/* Bolder */
+.weight-bolder {
+  font-weight: bolder;
+}
+
+/* Lighter */
+.weight-lighter {
+  font-weight: lighter;
+}
+
+/* 100 */
+.weight-100 {
+  font-weight: 100;
+}
+
+/* 200 */
+.weight-200 {
+  font-weight: 200;
+}
+
+/* 300 */
+.weight-300 {
+  font-weight: 300;
+}
+
+/* 400 */
+.weight-400 {
+  font-weight: 400;
+}
+
+/* 500 */
+.weight-500 {
+  font-weight: 500;
+}
+
+/* 600 */
+.weight-600 {
+  font-weight: 600;
+}
+
+/* 700 */
+.weight-700 {
+  font-weight: 700;
+}
+
+/* 800 */
+.weight-800 {
+  font-weight: 800;
+}
+
+/* 900 */
+.weight-900 {
+  font-weight: 900;
+}
+
+/* Inherit */
+.weight-inherit {
+  font-weight: inherit;
+}
+
+/* Initial */
+.weight-initial {
+  font-weight: initial;
+}
+
+/*
+  ______          _      _____ _         
+ |  ____|        | |    / ____(_)        
+ | |__ ___  _ __ | |_  | (___  _ _______ 
+ |  __/ _ \| '_ \| __|  \___ \| |_  / _ \
+ | | | (_) | | | | |_   ____) | |/ /  __/
+ |_|  \___/|_| |_|\__| |_____/|_/___\___|
+                                                                                
+*/
+
+.fs-xxs {
+  font-size: xx-small;
+}
+
+.fs-xs {
+  font-size: x-small;
+}
+
+.fs-s {
+  font-size: small;
+}
+
+.fs-m {
+  font-size: medium;
+}
+
+.fs-l {
+  font-size: large;
+}
+
+.fs-xl {
+  font-size: x-large;
+}
+
+.fs-xxl {
+  font-size: xx-large;
+}
+
+.fs-smaller {
+  font-size: smaller;
+}
+
+.fs-larger {
+  font-size: larger;
+}
+
+.fs-inherit {
+  font-size: inherit;
+}
+
+.fs-initial {
+  font-size: initial;
+}
+
+/*
+  _    _            _                _        _   _____       _      
+ | |  | |          (_)              | |      | | |  __ \     | |     
+ | |__| | ___  _ __ _ _______  _ __ | |_ __ _| | | |__) |   _| | ___ 
+ |  __  |/ _ \| '__| |_  / _ \| '_ \| __/ _` | | |  _  / | | | |/ _ \
+ | |  | | (_) | |  | |/ / (_) | | | | || (_| | | | | \ \ |_| | |  __/
+ |_|  |_|\___/|_|  |_/___\___/|_| |_|\__\__,_|_| |_|  \_\__,_|_|\___|
+                                                                     
+*/
+
+.hr-page {
+  margin: 30px -20px 20px;
+  border-top: 0.01rem solid #ededed;
+}
+
+/*
+  ____        _   _                  
+ |  _ \      | | | |                 
+ | |_) |_   _| |_| |_ ___  _ __  ___ 
+ |  _ <| | | | __| __/ _ \| '_ \/ __|
+ | |_) | |_| | |_| || (_) | | | \__ \
+ |____/ \__,_|\__|\__\___/|_| |_|___/
+                                     
+*/
+
+/* Buttons */
+.btn {
+  border: none;
+  padding: 1rem 3rem;
+  font-size: larger;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Outline buttons */
+.btn-outline-light, .btn-outline-dark {
+  background-color: transparent;
+  border: 2px solid;
+}
+
+/* Outline buttons dark */
+.btn-outline-dark {
+  border-color: #505050;
+  color: #505050;
+}
+
+/* Outline buttons dark hover */
+.btn-outline-dark:hover {
+  background-color: #505050;
+  color: #fff;
+}
+
+/* Outline buttons light */
+.btn-outline-light {
+  border-color: #ededed;
+  color: #ededed;
+}
+
+/* Outline buttons light hover */
+.btn-outline-light:hover {
+  background-color: #ededed;
+  color: #000;
+}
+
+/* Solid buttons dark */
+.btn-solid-dark {
+  background-color: #505050;
+  color: #fff;
+}
+
+/* Solid buttons dark hover */
+.btn-solid-dark:hover {
+  background-color: #202020;
+}
+
+/* Solid buttons light */
+.btn-solid-light {
+  background-color: #ededed;
+  color: #000;
+}
+
+/*Solid buttons light hover */
+.btn-solid-light:hover {
+  background-color: #dbdbdb;
+}
+
+/*
+  _                 
+ | |                
+ | |     ___   __ _ 
+ | |    / _ \ / _` |
+ | |___| (_) | (_| |
+ |______\___/ \__, |
+               __/ |
+              |___/ 
+*/
+
+.log {
+  width: 75%;
+  padding-bottom: 10px;
+}
+
+.log-box-light {
+  background-color: #ededed;
+  color: #000;
+}
+
+.log-box-dark {
+  background-color: #303030;
+  color: #fff;
+}
+
+.log h1, .log h2, .log h3, .log h4, .log h5, .log h6, .log p, .log a, .log ul li, .log ol li, .log span {
+  margin-left: 30px;
+}
+
+.log-title {
+  background-color: #F7AD92;
+  color: #fff;
+}
+
+/*
+   _____              _     
+  / ____|            | |    
+ | |     __ _ _ __ __| |___ 
+ | |    / _` | '__/ _` / __|
+ | |___| (_| | | | (_| \__ \
+  \_____\__,_|_|  \__,_|___/
+                            
+*/
+
+.card {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 99%;
+  height: fixed;
+}
+
+.card-light {
+  border-color: #dbdbdb;
+  background-color: #fff;
+  color: #000;
+}
+
+.card-dark {
+  border-color: #505050;
+  background-color: #303030;
+  color: #fff;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .card p, .card a, .card ul li, .card ol li, .card span {
+  margin-left: 30px;
+}
+
+
+/*
+   ____  _   _               
+  / __ \| | | |              
+ | |  | | |_| |__   ___ _ __ 
+ | |  | | __| '_ \ / _ \ '__|
+ | |__| | |_| | | |  __/ |   
+  \____/ \__|_| |_|\___|_|   
+                             
+*/
+
+.center {
+  display: block;
+  text-align: -webkit-center;
+}
+
+.code-light {
+  background-color: #ededed;
+  color: #000;
+  width: 100%;
+  cursor: text;
+}
+
+.code-dark {
+  background-color: #505050;
+  color: #fff;
+  width: 100%;
+  cursor: text;
+}
