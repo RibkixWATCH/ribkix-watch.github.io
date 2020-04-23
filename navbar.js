@@ -16,8 +16,9 @@ ul.appendChild(p2);
 
 var p3 = document.createElement("LI");
 var p3a = document.createElement("A");
-p3a.href = "https://ribkix-watch-online.github.io/app";
+p3a.href = "https://play.google.com/store/apps/details?id=com.ribkix.ribkixwatch";
 p3a.innerHTML = "App";
+p3a.target = "_blank";
 p3.appendChild(p3a);
 ul.appendChild(p3);
 
