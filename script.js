@@ -183,6 +183,6 @@ window.onload = function(){
   if (localStorage.getItem("intro")) {
     
   } else {
-    localStorage.setItem("intro","true")
+    localStorage.setItem("intro","false")
   }
 }
