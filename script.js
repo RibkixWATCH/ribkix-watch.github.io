@@ -159,9 +159,12 @@ function toggleintro(){
   if (localStorage.getItem("intro") == "false"){
     localStorage.setItem("intro","true");
     document.getElementById("intro").innerHTML = "Enabled";
-  } else {
+  } else if (localStorage.getItem("intro") == "true"){
     localStorage.setItem("intro","false");
     document.getElementById("intro").innerHTML = "Disabled";
+  } else {
+    localStorage.setItem("intro","true");
+    document.getElementById("intro").innerHTML = "Enabled";
   }
 }
 
