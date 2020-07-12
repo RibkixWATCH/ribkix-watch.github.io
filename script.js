@@ -159,12 +159,9 @@ function toggleintro(){
   if (localStorage.getItem("intro") == "false"){
     localStorage.setItem("intro","true");
     document.getElementById("intro").innerHTML = "Enabled";
-  } else if (localStorage.getItem("intro") == "true"){
+  } else {
     localStorage.setItem("intro","false");
     document.getElementById("intro").innerHTML = "Disabled";
-  } else {
-    localStorage.setItem("intro","true");
-    document.getElementById("intro").innerHTML = "Enabled";
   }
 }
 
@@ -182,5 +179,10 @@ window.onload = function(){
     if (localStorage.getItem("theme") == "yayeet") {
       yayeettheme();
     }
+  }
+  if (localStorage.getItem("intro")) {
+    
+  } else {
+    localStorage.setItem("intro","true")
   }
 }
